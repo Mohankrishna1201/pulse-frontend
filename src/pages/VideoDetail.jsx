@@ -85,7 +85,7 @@ const VideoDetail = () => {
   const getStreamUrl = () => {
     return videoAPI.getStreamUrl(id);
   };
-  console.log(videoAPI.getStreamUrl(id));
+  
   if (loading) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-gray-50 via-purple-50/30 to-blue-50/30 flex items-center justify-center">

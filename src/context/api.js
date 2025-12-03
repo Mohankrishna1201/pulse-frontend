@@ -38,7 +38,13 @@ api.interceptors.response.use(
       // Handle 401 - Unauthorized
       if (status === 401) {
         localStorage.removeItem('token');
-        window.location.href = '/login';
+        window.location.href = '/';
+      }
+      
+      // Handle 403 - Forbidden (access denied)
+      if (status === 403) {
+        localStorage.removeItem('token');
+        window.location.href = '/';
       }
       
       // Attach formatted error message

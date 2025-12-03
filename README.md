@@ -82,7 +82,10 @@ npm install
 # Configure .env file (see below)
 npm run dev
 ```
-
+### Backend Repo
+```bash
+https://github.com/Mohankrishna1201/pulse-backend
+```
 ### Environment Variables (Backend)
 ```
 PORT=5000
